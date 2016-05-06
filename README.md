@@ -1,23 +1,23 @@
-# typecheck
+# typeinfer
 
-A simple and naive typechecker for zepto code.
+A simple and naive type inference library for zepto code.
 
 ## Usage
 
 ![](http://g.recordit.co/QC7E2Z5Cvw.gif)
 
 ```
-(load "typecheck")
-(import-all "typecheck")
-(typecheck:check-program some-program)
-(typecheck:check-expression some-expression)
+(load "typeinfer")
+(import-all "typeinfer")
+(typeinfer:infer-program some-program)
+(typeinfer:infer-expression some-expression)
 ```
 
 ## Caveats
 
 This library does not about currying, overloading
 or generic functions. If it is determined that
-the function works on integers, the typechecker
+the function works on integers, the typeinferer
 will assume this a truth. If later facts disprove that
 claim, it will just assume the thing is `:ambiguous`,
 which it is.
