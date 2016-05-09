@@ -1,0 +1,6 @@
+(define (foo x y)
+  (begin
+    (define (add ix iy) (+ ix iy))
+    (add x y)))
+
+(foo 1 2)

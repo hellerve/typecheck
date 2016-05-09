@@ -35,7 +35,7 @@
         ((atom? expr) (return :atom))
         ((hash-map? expr) (return :hash-map))
         ((vector? expr) (return :vector))
-        ((byte-vector? expr) (return :vector))
+        ((byte-vector? expr) (return :byte-vector))
         ((symbol? expr)
           (let ((sexpr (->string expr)))
             (if (in? env sexpr)
