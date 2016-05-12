@@ -4,7 +4,7 @@ A simple and naive type inference library for zepto code.
 
 ## Usage
 
-![](http://g.recordit.co/QC7E2Z5Cvw.gif)
+![](http://g.recordit.co/MpcMHlJOER.gif)
 
 ```
 (load "typeinfer")
